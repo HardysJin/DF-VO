@@ -43,4 +43,4 @@ RUN conda env list && /root/miniconda3/envs/dfvo/bin/pip install gdown \
     && /root/miniconda3/envs/dfvo/bin/gdown --id 1HgIJUHgiW5ZCYgUsQfpIu-SSHQgUgBqw -O model_zoo.zip
 RUN unzip model_zoo.zip && rm model_zoo.zip
 
-ENV PYTHONPATH=$PYTHONPATH:/root/DF-VO/
+ENV PYTHONPATH=/root/DF-VO/
